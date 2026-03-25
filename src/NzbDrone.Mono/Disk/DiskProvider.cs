@@ -441,7 +441,7 @@ namespace NzbDrone.Mono.Disk
                     return false;
                 }
 
-                fileInfo.CreateLink(destination);
+                fileInfo.CreateSymbolicLink(destination);
                 return true;
             }
             catch (UnixIOException ex)
